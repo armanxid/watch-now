@@ -3,8 +3,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:watch_now/bloc/popular_movies_bloc.dart';
 import 'package:watch_now/page/MoviePage.dart';
 import 'package:watch_now/util/const.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Future.delayed(const Duration(seconds: 2));
+  FlutterNativeSplash.remove();
+
   runApp(MyApp(
     popularMoviesBloc: PopularDataBloc()..fetchPopularData(movieApi, apiKey),
     popularTvShowsBloc: PopularDataBloc()..fetchPopularData(tvApi, apiKey),
@@ -20,6 +25,15 @@ class MyApp extends StatelessWidget {
   final PopularDataBloc popularTvShowsBloc;
   final PopularDataBloc topRatedMoviesBloc;
   final PopularDataBloc nowPlayingMoviesBloc;
+  void initState() {
+    initialization();
+  }
+
+  void initialization() async {
+    await Future.delayed(const Duration(seconds: 2));
+
+    FlutterNativeSplash.remove();
+  }
 
   const MyApp(
       {Key? key,
