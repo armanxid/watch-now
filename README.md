@@ -1,16 +1,27 @@
 # watch_now
 
-A new Flutter project.
+Project-based Test for Elemes
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Project ini membuat aplikasi bernama "Watch Now" menggunakan API https://api.themoviedb.org/3.
+Aplikasi ini menampilkan bagian Now Playing movies, Popular movies, Popular TV Shows, Top Rated movies. Project ini menggunakan Flutter dan menggunakan BloC State Management.
 
-A few resources to get you started if this is your first Flutter project:
+# Instalasi
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Requirement
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Emulator atau device Android
+- Dart & Flutter
+- Android SDK
+- Text Editor (VS Code atau Android Studio)
+- Internet
+
+## Step-by-step
+
+1. Clone repository ini (gh repo clone armanxid/watch-now)
+2. Open project ini menggunakan VS Code atau Android Studio
+3. Jalankan Emulator atau sambung device Android
+4. Klik 'Run without debugging' jika di VS Code atau klik tombol ikon 'Play' jika di Android Studio untuk menjalankan program
+5. Tunggu proses running program
+6. Program akan menampilkan Splash screen dan memuat data kemudian diarahkan ke halaman utama dan menampilkan konten
